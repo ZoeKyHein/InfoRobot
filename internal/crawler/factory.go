@@ -1,6 +1,8 @@
 package crawler
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func GetCrawler(region string) (Crawler, error) {
 	switch region {
@@ -8,6 +10,10 @@ func GetCrawler(region string) (Crawler, error) {
 		return NewBeijingCrawler(), nil
 	case "上海":
 		return NewShanghaiCrawler(), nil
+	case "天津":
+		return NewTianjinCrawler(), nil
+	case "大连":
+		return NewDalianCrawler(), nil
 	default:
 		return nil, fmt.Errorf("unsupported region: %s", region)
 	}
