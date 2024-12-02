@@ -1,14 +1,14 @@
 package main
 
 import (
+	"InfoRobot/internal"
 	"testing"
 )
 
-func TestFetchData(t *testing.T) {
-
-	SpiderTask()
-}
-
-func TestSpiderAndMessage(t *testing.T) {
-	SpiderAndMessage()
+func TestSendMultiRegions(t *testing.T) {
+	regions := []string{
+		"北京",
+		"上海",
+	}
+	internal.SpiderAndSend(regions)
 }
