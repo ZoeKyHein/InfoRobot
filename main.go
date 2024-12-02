@@ -80,7 +80,7 @@ func main() {
 		log.Fatalf("定时任务添加失败: %v", err)
 	}
 
-	_, err = c.AddFunc("54 14 * * *", SpiderAndMessage) // 15:30
+	_, err = c.AddFunc("30 17 * * *", SpiderAndMessage) // 15:30
 	if err != nil {
 		log.Fatalf("定时任务添加失败: %v", err)
 	}
