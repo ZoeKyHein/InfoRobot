@@ -51,13 +51,31 @@ func SpiderAndSend(regions []string) {
 
 	wg.Wait()
 
-	finalMessage := ""
-	for region, msgs := range msgMap {
-		finalMessage += fmt.Sprintf("**『%s』**\n", region)
-		for i, st := range msgs.Msgs {
-			finalMessage += fmt.Sprintf("%d. **[%s]** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)
+	gr := groupRegions(regions, 4)
+	for _, group := range gr {
+		finalMessage := ""
+		for _, region := range group {
+			msgs := msgMap[region]
+			finalMessage += fmt.Sprintf("**『%s』**\n", region)
+			for i, st := range msgs.Msgs {
+				finalMessage += fmt.Sprintf("%d. **[%s]** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)
+			}
+			finalMessage += "========================\n"
 		}
-		finalMessage += "========================\n"
+		sender.SendMessage(finalMessage)
 	}
-	sender.SendMessage(finalMessage)
+
+}
+
+// groupRegions 按指定数量分组地区
+func groupRegions(regions []string, size int) [][]string {
+	var groups [][]string
+	for i := 0; i < len(regions); i += size {
+		end := i + size
+		if end > len(regions) {
+			end = len(regions)
+		}
+		groups = append(groups, regions[i:end])
+	}
+	return groups
 }

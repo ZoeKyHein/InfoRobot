@@ -14,6 +14,8 @@ func GetCrawler(region string) (Crawler, error) {
 		return NewTianjinCrawler(), nil
 	case "大连":
 		return NewDalianCrawler(), nil
+	case "重庆":
+		return NewChongqingCrawler(), nil
 	default:
 		return nil, fmt.Errorf("unsupported region: %s", region)
 	}
