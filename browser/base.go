@@ -10,7 +10,7 @@ const (
 	ShanghaiBaseUrl = `shanghai.chinatax.gov.cn/xxgk`
 	ShanghaiInfoUrl = `https://shanghai.chinatax.gov.cn/xxgk/`
 
-	ChongqingBaseUrl = `chongqing.chinatax.gov.cn`
+	ChongqingBaseUrl = `chongqing.chinatax.gov.cn/xxgk`
 	ChongqingInfoUrl = `http://chongqing.chinatax.gov.cn/cqtax/xxgk/`
 
 	DalianBaseUrl = `https://dalian.chinatax.gov.cn`
