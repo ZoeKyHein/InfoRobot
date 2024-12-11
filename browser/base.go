@@ -70,8 +70,8 @@ const (
 	AnhuiBaseUrl = `anhui.chinatax.gov.cn`
 	AnhuiInfoUrl = `https://anhui.chinatax.gov.cn/col/col5419/index.html`
 
-	FujianBaseUrl = `fujian.chinatax.gov.cn`
-	FujianInfoUrl = `https://fujian.chinatax.gov.cn/col/col1681/index.html`
+	FujianBaseUrl = `http://fujian.chinatax.gov.cn`
+	FujianInfoUrl = `http://fujian.chinatax.gov.cn/`
 
 	JiangxiBaseUrl = `jiangxi.chinatax.gov.cn`
 	JiangxiInfoUrl = `https://jiangxi.chinatax.gov.cn/col/col1681/index.html`
