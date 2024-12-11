@@ -31,8 +31,8 @@ const (
 	ShenzhenBaseUrl = `shenzhen.chinatax.gov.cn`
 	ShenzhenInfoUrl = `https://shenzhen.chinatax.gov.cn/sztax/xxgk/xxgk.shtml`
 
-	NeimengBaseUrl = `neimeng.chinatax.gov.cn`
-	NeimengInfoUrl = `https://neimeng.chinatax.gov.cn/col/col1681/index.html`
+	NeimengguBaseUrl = `neimenggu.chinatax.gov.cn/xxgk`
+	NeimengguInfoUrl = `https://neimenggu.chinatax.gov.cn/xxgk/`
 
 	GuangxiBaseUrl = `guangxi.chinatax.gov.cn`
 	GuangxiInfoUrl = `https://guangxi.chinatax.gov.cn/col/col1681/index.html`
