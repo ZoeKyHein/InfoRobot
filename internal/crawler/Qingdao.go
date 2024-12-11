@@ -7,6 +7,7 @@ import (
 	"github.com/go-rod/rod"
 	"log"
 	"strings"
+	"time"
 )
 
 type QingdaoCrawler struct{}
@@ -25,6 +26,7 @@ func (b *QingdaoCrawler) FetchData() (models.Data, error) {
 
 	msg := make([]models.MsgSt, 0)
 	rod.Try(func() {
+		p.Timeout(20 * time.Second)
 		p.MustNavigate(browser.QingdaoInfoUrl)
 		p.MustWaitStable()
 		table := p.MustElement(`#tongzhi_con1`)

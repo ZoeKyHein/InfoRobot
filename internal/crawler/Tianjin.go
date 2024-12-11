@@ -6,6 +6,7 @@ import (
 	"context"
 	"github.com/go-rod/rod"
 	"log"
+	"time"
 )
 
 type TianjinCrawler struct{}
@@ -24,6 +25,7 @@ func (b *TianjinCrawler) FetchData() (models.Data, error) {
 
 	msg := make([]models.MsgSt, 0)
 	rod.Try(func() {
+		p.Timeout(20 * time.Second)
 		p.MustNavigate(browser.TianjinInfoUrl)
 		p.MustWaitStable()
 		table := p.MustElement(`div#tzgg>table>tbody>tr>td>div>table>tbody`)

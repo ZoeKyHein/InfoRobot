@@ -6,15 +6,17 @@ import (
 	"context"
 	"github.com/go-rod/rod"
 	"log"
+	"strings"
+	"time"
 )
 
-type BeijingCrawler struct{}
+type ChongqingCrawler struct{}
 
-func NewBeijingCrawler() *BeijingCrawler {
-	return &BeijingCrawler{}
+func NewChongqingCrawler() *ChongqingCrawler {
+	return &ChongqingCrawler{}
 }
 
-func (b *BeijingCrawler) FetchData() (models.Data, error) {
+func (b *ChongqingCrawler) FetchData() (models.Data, error) {
 	lxrod := browser.Lxrod{}
 	_, p, err := lxrod.NewLowBrowser(context.Background())
 	if err != nil {
@@ -24,22 +26,23 @@ func (b *BeijingCrawler) FetchData() (models.Data, error) {
 
 	msg := make([]models.MsgSt, 0)
 	rod.Try(func() {
-		p.MustNavigate(browser.BeijingInfoUrl)
+		p.Timeout(20 * time.Second)
+		p.MustNavigate(browser.ChongqingInfoUrl)
 		p.MustWaitStable()
-		table := p.MustElement("div.xxgk_tzgg > ul")
+		table := p.MustElement(`#xxgk_1`)
 		for i, element := range table.MustElements("li") {
 			if i > 4 {
 				break
 			}
 			msg = append(msg, models.MsgSt{
-				Title: *element.MustElement("a").MustAttribute("title"),
-				Date:  element.MustElement("span").MustText(),
-				Url:   browser.BeijingBaseUrl + *element.MustElement("a").MustAttribute("href"),
+				Title: element.MustElement("dl>dd>a").MustText(),
+				Date:  element.MustElement("dl>dt").MustText(),
+				Url:   browser.ChongqingBaseInfoUrl + strings.Replace(*element.MustElement("dl>dd>a").MustAttribute("href"), ".", "", 1),
 			})
 		}
 	})
 	data := models.Data{
-		Region: "北京",
+		Region: "重庆",
 		Msgs:   msg,
 	}
 	return data, nil

@@ -6,6 +6,7 @@ import (
 	"context"
 	"github.com/go-rod/rod"
 	"log"
+	"time"
 )
 
 type DalianCrawler struct{}
@@ -24,6 +25,7 @@ func (b *DalianCrawler) FetchData() (models.Data, error) {
 
 	msg := make([]models.MsgSt, 0)
 	rod.Try(func() {
+		p.Timeout(20 * time.Second)
 		p.MustNavigate(browser.DalianInfoUrl)
 		p.MustWaitStable()
 		table := p.MustElement(`[class="notice-list"]>ul`)

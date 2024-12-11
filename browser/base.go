@@ -1,5 +1,7 @@
 package browser
 
+var Today string
+
 const (
 	BeijingBaseUrl = `beijing.chinatax.gov.cn`
 	BeijingInfoUrl = `http://beijing.chinatax.gov.cn/bjswj/c104176/Information.shtml`
@@ -21,10 +23,10 @@ const (
 	QingdaoInfoUrl = `http://qingdao.chinatax.gov.cn/xxgk2019/`
 
 	NingboBaseUrl = `https://ningbo.chinatax.gov.cn`
-	NingboInfoUrl = `https://ningbo.chinatax.gov.cn/col/col1681/index.html`
+	NingboInfoUrl = `https://ningbo.chinatax.gov.cn/xxgk/index.html`
 
-	XiamenBaseUrl = `xiamen.chinatax.gov.cn`
-	XiamenInfoUrl = `https://xiamen.chinatax.gov.cn/col/col1681/index.html`
+	XiamenBaseUrl = `http://xiamen.chinatax.gov.cn`
+	XiamenInfoUrl = `http://xiamen.chinatax.gov.cn/xmswcms/xxgk.html`
 
 	ShenzhenBaseUrl = `shenzhen.chinatax.gov.cn`
 	ShenzhenInfoUrl = `https://shenzhen.chinatax.gov.cn/col/col1681/index.html`

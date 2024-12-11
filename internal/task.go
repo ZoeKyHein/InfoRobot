@@ -1,11 +1,13 @@
 package internal
 
 import (
+	"InfoRobot/browser"
 	"InfoRobot/internal/crawler"
 	"InfoRobot/internal/sender"
 	"InfoRobot/models"
 	"fmt"
 	"log"
+	"strings"
 	"sync"
 )
 
@@ -21,11 +23,6 @@ func SpiderAndMessage(region string) models.Data {
 	if err != nil {
 		log.Printf("爬取失败: %v", err)
 		return models.Data{}
-	}
-
-	msg := fmt.Sprintf("「%s」\n", data.Region)
-	for i, st := range data.Msgs {
-		msg += fmt.Sprintf("%d. 「%s」[%s](%s)\n", i+1, st.Date, st.Title, st.Url)
 	}
 
 	return data
@@ -58,10 +55,17 @@ func SpiderAndSend(regions []string) {
 			msgs := msgMap[region]
 			finalMessage += fmt.Sprintf("**『%s』**\n", region)
 			for i, st := range msgs.Msgs {
-				finalMessage += fmt.Sprintf("%d. **[%s]** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)
+				if st.Date == browser.Today {
+					finalMessage += fmt.Sprintf("%d. **<font color=\"warning\">「%s」</font>** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)
+				} else {
+					finalMessage += fmt.Sprintf("%d. **「%s」** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)
+				}
 			}
 			finalMessage += "========================\n"
 		}
+
+		// 删除"国家税务总局",以节省消息长度
+		finalMessage = strings.ReplaceAll(finalMessage, "国家税务总局", "")
 		sender.SendMessage(finalMessage)
 	}
 

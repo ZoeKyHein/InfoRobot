@@ -7,6 +7,7 @@ import (
 	"github.com/go-rod/rod"
 	"log"
 	"strings"
+	"time"
 )
 
 type ShanghaiCrawler struct{}
@@ -25,6 +26,7 @@ func (b *ShanghaiCrawler) FetchData() (models.Data, error) {
 
 	msg := make([]models.MsgSt, 0)
 	rod.Try(func() {
+		p.Timeout(20 * time.Second)
 		p.MustNavigate(browser.ShanghaiInfoUrl)
 		p.MustWaitStable()
 		table := p.MustElement(`[class="infoList js_infoList"]`)

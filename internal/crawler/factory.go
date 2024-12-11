@@ -18,10 +18,10 @@ func GetCrawler(city string) (Crawler, error) {
 		return NewDalianCrawler(), nil
 	case "青岛":
 		return NewQingdaoCrawler(), nil
-	//case "宁波":
-	//	return NewNingboCrawler(), nil
-	//case "厦门":
-	//	return NewXiamenCrawler(), nil
+	case "宁波":
+		return NewNingboCrawler(), nil
+	case "厦门":
+		return NewXiamenCrawler(), nil
 	//case "深圳":
 	//	return NewShenzhenCrawler(), nil
 	//case "内蒙古":
