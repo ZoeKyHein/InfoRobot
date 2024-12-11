@@ -29,7 +29,7 @@ const (
 	XiamenInfoUrl = `http://xiamen.chinatax.gov.cn/xmswcms/xxgk.html`
 
 	ShenzhenBaseUrl = `shenzhen.chinatax.gov.cn`
-	ShenzhenInfoUrl = `https://shenzhen.chinatax.gov.cn/col/col1681/index.html`
+	ShenzhenInfoUrl = `https://shenzhen.chinatax.gov.cn/sztax/xxgk/xxgk.shtml`
 
 	NeimengBaseUrl = `neimeng.chinatax.gov.cn`
 	NeimengInfoUrl = `https://neimeng.chinatax.gov.cn/col/col1681/index.html`
