@@ -12,6 +12,7 @@ func TestSendMultiRegions(t *testing.T) {
 		"天津",
 		"大连",
 		"重庆",
+		"青岛",
 	}
 	internal.SpiderAndSend(regions)
 }

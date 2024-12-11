@@ -18,7 +18,7 @@ const (
 	DalianInfoUrl = `https://dalian.chinatax.gov.cn/col/col1681/index.html`
 
 	QingdaoBaseUrl = `https://qingdao.chinatax.gov.cn`
-	QingdaoInfoUrl = `https://qingdao.chinatax.gov.cn/col/col1681/index.html`
+	QingdaoInfoUrl = `http://qingdao.chinatax.gov.cn/xxgk2019/`
 
 	NingboBaseUrl = `https://ningbo.chinatax.gov.cn`
 	NingboInfoUrl = `https://ningbo.chinatax.gov.cn/col/col1681/index.html`
