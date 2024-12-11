@@ -35,7 +35,7 @@ func (b *ChongqingCrawler) FetchData() (models.Data, error) {
 			msg = append(msg, models.MsgSt{
 				Title: element.MustElement("dl>dd>a").MustText(),
 				Date:  element.MustElement("dl>dt").MustText(),
-				Url:   browser.ChongqingBaseUrl + strings.Replace(*element.MustElement("dl>dd>a").MustAttribute("href"), ".", "", 1),
+				Url:   browser.ChongqingBaseInfoUrl + strings.Replace(*element.MustElement("dl>dd>a").MustAttribute("href"), ".", "", 1),
 			})
 		}
 	})
