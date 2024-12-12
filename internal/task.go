@@ -55,7 +55,7 @@ func SpiderAndSend(regions []string) {
 			msgs := msgMap[region]
 			finalMessage += fmt.Sprintf("**『%s』**\n", region)
 			for i, st := range msgs.Msgs {
-				if st.Date == browser.Today {
+				if strings.Contains(browser.Today, st.Date) {
 					finalMessage += fmt.Sprintf("%d. **<font color=\"warning\">「%s」</font>** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)
 				} else {
 					finalMessage += fmt.Sprintf("%d. **「%s」** [%s](%s)\n", i+1, st.Date, st.Title, st.Url)

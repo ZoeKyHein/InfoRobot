@@ -10,7 +10,7 @@ import (
 
 // 主程序
 func main() {
-	browser.Today = time.Now().Format("01-02")
+	browser.Today = time.Now().Format("2006-01-02")
 
 	c := cron.New()
 
