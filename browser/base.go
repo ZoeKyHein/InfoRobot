@@ -34,8 +34,8 @@ const (
 	NeimengguBaseUrl = `neimenggu.chinatax.gov.cn/xxgk`
 	NeimengguInfoUrl = `https://neimenggu.chinatax.gov.cn/xxgk/`
 
-	GuangxiBaseUrl = `guangxi.chinatax.gov.cn`
-	GuangxiInfoUrl = `https://guangxi.chinatax.gov.cn/col/col1681/index.html`
+	GuangxiBaseUrl = `guangxi.chinatax.gov.cn/xxgk`
+	GuangxiInfoUrl = `https://guangxi.chinatax.gov.cn/xxgk/`
 
 	XizangBaseUrl = `xizang.chinatax.gov.cn`
 	XizangInfoUrl = `https://xizang.chinatax.gov.cn/col/col1681/index.html`
