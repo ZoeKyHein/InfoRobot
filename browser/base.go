@@ -110,5 +110,5 @@ const (
 	GansuInfoUrl = `http://gansu.chinatax.gov.cn/col/col2543/index.html`
 
 	QinghaiBaseUrl = `qinghai.chinatax.gov.cn`
-	QinghaiInfoUrl = `https://qinghai.chinatax.gov.cn/col/col1681/index.html`
+	QinghaiInfoUrl = `http://qinghai.chinatax.gov.cn/web/xxgk/xxgk.shtml`
 )
