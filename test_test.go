@@ -32,7 +32,17 @@ func TestSendMultiRegions(t *testing.T) {
 		//"江苏",
 		//"江西",
 		//"吉林",
-		"辽宁",
+		//"辽宁",
+		//"宁夏",
+		//"青海",
+		//"陕西",
+		//"山东",
+		//"山西",
+		//"四川",
+		"新疆",
+		//"西藏",
+		//"云南",
+		//"浙江",
 	}
 	internal.SpiderAndSend(regions)
 }

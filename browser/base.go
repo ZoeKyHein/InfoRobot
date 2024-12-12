@@ -43,7 +43,7 @@ const (
 	NingxiaBaseUrl = `http://ningxia.chinatax.gov.cn`
 	NingxiaInfoUrl = `http://ningxia.chinatax.gov.cn/col/col10877/index.html`
 
-	XinjiangBaseUrl = `https://xinjiang.chinatax.gov.cn`
+	XinjiangBaseUrl = `https://xinjiang.chinatax.gov.cn/zwgk`
 	XinjiangInfoUrl = `https://xinjiang.chinatax.gov.cn/zwgk/`
 
 	HebeiBaseUrl = `http://hebei.chinatax.gov.cn/hbsw/xxgk`
