@@ -56,7 +56,7 @@ const (
 	LiaoningInfoUrl = `https://liaoning.chinatax.gov.cn/col/col1681/index.html`
 
 	JilinBaseUrl = `jilin.chinatax.gov.cn`
-	JilinInfoUrl = `https://jilin.chinatax.gov.cn/col/col1681/index.html`
+	JilinInfoUrl = `http://jilin.chinatax.gov.cn/col/col296/index.html`
 
 	HeilongjiangBaseUrl = `heilongjiang.chinatax.gov.cn`
 	HeilongjiangInfoUrl = `http://heilongjiang.chinatax.gov.cn/col/col7757/index.html`
