@@ -37,20 +37,20 @@ const (
 	GuangxiBaseUrl = `guangxi.chinatax.gov.cn/xxgk`
 	GuangxiInfoUrl = `https://guangxi.chinatax.gov.cn/xxgk/`
 
-	XizangBaseUrl = `xizang.chinatax.gov.cn`
-	XizangInfoUrl = `https://xizang.chinatax.gov.cn/col/col1681/index.html`
+	XizangBaseUrl = `https://xizang.chinatax.gov.cn`
+	XizangInfoUrl = `https://xizang.chinatax.gov.cn/col/col5330/index.html`
 
-	NingxiaBaseUrl = `ningxia.chinatax.gov.cn`
-	NingxiaInfoUrl = `https://ningxia.chinatax.gov.cn/col/col1681/index.html`
+	NingxiaBaseUrl = `http://ningxia.chinatax.gov.cn`
+	NingxiaInfoUrl = `http://ningxia.chinatax.gov.cn/col/col10877/index.html`
 
-	XinjiangBaseUrl = `xinjiang.chinatax.gov.cn`
-	XinjiangInfoUrl = `https://xinjiang.chinatax.gov.cn/col/col1681/index.html`
+	XinjiangBaseUrl = `https://xinjiang.chinatax.gov.cn`
+	XinjiangInfoUrl = `https://xinjiang.chinatax.gov.cn/zwgk/`
 
 	HebeiBaseUrl = `http://hebei.chinatax.gov.cn/hbsw/xxgk`
 	HebeiInfoUrl = `http://hebei.chinatax.gov.cn/hbsw/xxgk/`
 
-	ShanxiBaseUrl = `shanxi.chinatax.gov.cn`
-	ShanxiInfoUrl = `https://shanxi.chinatax.gov.cn/col/col1681/index.html`
+	ShanxiBaseUrl = `http://shanxi.chinatax.gov.cn/xxgk`
+	ShanxiInfoUrl = `http://shanxi.chinatax.gov.cn/xxgk`
 
 	LiaoningBaseUrl = `https://liaoning.chinatax.gov.cn/`
 	LiaoningInfoUrl = `https://liaoning.chinatax.gov.cn/col/col6/index.html`
@@ -64,8 +64,8 @@ const (
 	JiangsuBaseUrl = `jiangsu.chinatax.gov.cn`
 	JiangsuInfoUrl = `https://jiangsu.chinatax.gov.cn/col/col8197/index.html`
 
-	ZhejiangBaseUrl = `zhejiang.chinatax.gov.cn`
-	ZhejiangInfoUrl = `https://zhejiang.chinatax.gov.cn/col/col1681/index.html`
+	ZhejiangBaseUrl = `https://zhejiang.chinatax.gov.cn`
+	ZhejiangInfoUrl = `https://zhejiang.chinatax.gov.cn/col/col13133/index.html`
 
 	AnhuiBaseUrl = `anhui.chinatax.gov.cn`
 	AnhuiInfoUrl = `https://anhui.chinatax.gov.cn/col/col5419/index.html`
@@ -76,8 +76,8 @@ const (
 	JiangxiBaseUrl = `jiangxi.chinatax.gov.cn`
 	JiangxiInfoUrl = `https://jiangxi.chinatax.gov.cn/col/col31013/index.html`
 
-	ShandongBaseUrl = `shandong.chinatax.gov.cn`
-	ShandongInfoUrl = `https://shandong.chinatax.gov.cn/col/col1681/index.html`
+	ShandongBaseUrl = `https://shandong.chinatax.gov.cn`
+	ShandongInfoUrl = `https://shandong.chinatax.gov.cn/col/col3/index.html`
 
 	HenanBaseUrl = `https://henan.chinatax.gov.cn`
 	HenanInfoUrl = `https://henan.chinatax.gov.cn/henanchinatax/xxgk/index.html`
@@ -94,17 +94,17 @@ const (
 	HainanBaseUrl = `hainan.chinatax.gov.cn`
 	HainanInfoUrl = `https://hainan.chinatax.gov.cn/xxgk/`
 
-	SichuanBaseUrl = `sichuan.chinatax.gov.cn`
-	SichuanInfoUrl = `https://sichuan.chinatax.gov.cn/col/col1681/index.html`
+	SichuanBaseUrl = `https://sichuan.chinatax.gov.cn`
+	SichuanInfoUrl = `https://sichuan.chinatax.gov.cn/col/col278/index.html`
 
 	GuizhouBaseUrl = `guizhou.chinatax.gov.cn`
 	GuizhouInfoUrl = `https://guizhou.chinatax.gov.cn/xxgk/`
 
-	YunnanBaseUrl = `yunnan.chinatax.gov.cn`
-	YunnanInfoUrl = `https://yunnan.chinatax.gov.cn/col/col1681/index.html`
+	YunnanBaseUrl = `https://yunnan.chinatax.gov.cn`
+	YunnanInfoUrl = `https://yunnan.chinatax.gov.cn/col/col3829/index.html`
 
 	ShaanxiBaseUrl = `shaanxi.chinatax.gov.cn`
-	ShaanxiInfoUrl = `https://shaanxi.chinatax.gov.cn/col/col1681/index.html`
+	ShaanxiInfoUrl = `https://shaanxi.chinatax.gov.cn/col/col7284/index.html`
 
 	GansuBaseUrl = `http://gansu.chinatax.gov.cn`
 	GansuInfoUrl = `http://gansu.chinatax.gov.cn/col/col2543/index.html`
