@@ -19,7 +19,8 @@ func TestSendMultiRegions(t *testing.T) {
 		//"内蒙古",
 		//"安徽",
 		//"福建",
-		"甘肃",
+		//"甘肃",
+		"广东",
 	}
 	internal.SpiderAndSend(regions)
 }

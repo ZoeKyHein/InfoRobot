@@ -89,7 +89,7 @@ const (
 	HunanInfoUrl = `https://hunan.chinatax.gov.cn/col/col1681/index.html`
 
 	GuangdongBaseUrl = `guangdong.chinatax.gov.cn`
-	GuangdongInfoUrl = `https://guangdong.chinatax.gov.cn/col/col1681/index.html`
+	GuangdongInfoUrl = `https://guangdong.chinatax.gov.cn/gdsw/xxgk/xxgk.shtml`
 
 	HainanBaseUrl = `hainan.chinatax.gov.cn`
 	HainanInfoUrl = `https://hainan.chinatax.gov.cn/col/col1681/index.html`
