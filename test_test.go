@@ -23,7 +23,8 @@ func TestSendMultiRegions(t *testing.T) {
 		//"广东",
 		//"广西",
 		//"贵州",
-		"海南",
+		//"海南",
+		"河北",
 	}
 	internal.SpiderAndSend(regions)
 }
