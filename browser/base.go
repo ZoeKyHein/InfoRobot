@@ -85,8 +85,8 @@ const (
 	HubeiBaseUrl = `http://hubei.chinatax.gov.cn/`
 	HubeiInfoUrl = `http://hubei.chinatax.gov.cn/hbsw/xxgk/index.html`
 
-	HunanBaseUrl = `hunan.chinatax.gov.cn`
-	HunanInfoUrl = `https://hunan.chinatax.gov.cn/col/col1681/index.html`
+	HunanBaseUrl = `https://hunan.chinatax.gov.cn`
+	HunanInfoUrl = `https://hunan.chinatax.gov.cn/category/20181220000678`
 
 	GuangdongBaseUrl = `guangdong.chinatax.gov.cn`
 	GuangdongInfoUrl = `https://guangdong.chinatax.gov.cn/gdsw/xxgk/xxgk.shtml`
