@@ -49,7 +49,7 @@ const (
 	HebeiBaseUrl = `http://hebei.chinatax.gov.cn/hbsw/xxgk`
 	HebeiInfoUrl = `http://hebei.chinatax.gov.cn/hbsw/xxgk/`
 
-	ShanxiBaseUrl = `http://shanxi.chinatax.gov.cn/xxgk`
+	ShanxiBaseUrl = `http://shanxi.chinatax.gov.cn`
 	ShanxiInfoUrl = `http://shanxi.chinatax.gov.cn/xxgk`
 
 	LiaoningBaseUrl = `https://liaoning.chinatax.gov.cn/`
